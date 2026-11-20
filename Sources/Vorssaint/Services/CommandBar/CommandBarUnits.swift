@@ -275,7 +275,7 @@ enum CommandBarUnits {
     }
 }
 
-// ponytail: Foundation defines UnitDuration only up to .hours; larger spans
+// Known limit: Foundation defines UnitDuration only up to .hours; larger spans
 // are fixed multipliers of seconds (365 days for year).
 private extension UnitDuration {
     static let days = UnitDuration(symbol: "d", converter: UnitConverterLinear(coefficient: 86_400))
